@@ -105,9 +105,9 @@ fn update(
             match other_phase {
                 Ok(phase) => (phase - state.phase).sin(),
                 Err(err) => {
-                    println!(
-                        "Can not get phase of other firefly! Maybe it is not yet instantiated? Error: {:?}", err
-                    );
+                    // println!(
+                    //     "Can not get phase of other firefly! Maybe it is not yet instantiated? Error: {:?}", err
+                    // );
                     0.
                 }
             }
